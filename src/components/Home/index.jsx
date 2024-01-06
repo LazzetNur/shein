@@ -7,11 +7,12 @@ export default function Home() {
   const [tabs, setTabs] = useState([]);
 
   useEffect(() => {
+    
     async function getTabs() {
       const authAxios = axios.create({
         baseUrl: "https://unofficial-shein.p.rapidapi.com",
         params: {
-          language: "en",
+          language: "en",  
           country: "US",
           currency: "USD",
         },
